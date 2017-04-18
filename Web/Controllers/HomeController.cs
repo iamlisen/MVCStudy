@@ -5,19 +5,32 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Mvc.Ajax;
 
+
 namespace Web.Controllers
 {
 	public class HomeController : Controller
 	{
 		public ActionResult Index()
 		{
-			var mvcName = typeof(Controller).Assembly.GetName();
-			var isMono = Type.GetType("Mono.Runtime") != null;
-
-			ViewData["Version"] = mvcName.Version.Major + "." + mvcName.Version.Minor;
-			ViewData["Runtime"] = isMono ? "Mono" : ".NET";
-
+			ViewBag.Greeting = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+			ViewBag.Title = "首页";
 			return View();
+		}
+
+		[HttpGet]
+		public ActionResult RsvpForm(){
+			return View();
+		}
+
+		[HttpPost]
+		public ViewResult RsvpForm(GuestResponse response){
+			if (ModelState.IsValid)
+			{
+				ViewBag.Title = "谢谢";
+				return View(response);
+			}else{
+				return View();
+			}
 		}
 	}
 }

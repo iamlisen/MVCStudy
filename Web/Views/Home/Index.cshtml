@@ -1,1 +1,14 @@
-﻿<h2>Welcome to ASP.NET MVC @ViewData["Version"] on @ViewData["Runtime"]!</h2>
+﻿<div class="panel panel-info">
+	<div class="panel-heading">
+		欢迎参加晚会
+	</div>
+	<div>
+<p class="text-success">
+	我们将举行一个令人兴奋的晚会。请点击下面的链接回复是否参加？
+			<br/>
+</p>
+		</div>
+	<div class="btn btn-default">
+	@Html.ActionLink("立即回复","RsvpForm")
+	</div>
+	</div>

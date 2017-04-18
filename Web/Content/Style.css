@@ -1,0 +1,28 @@
+﻿.validation-summary-errors {
+    font-weight:bold;
+    color:red;
+}
+
+.validation-summary-errors > ul > li {
+        list-style-image: url(../Images/error.png);
+}
+
+    .validation-summary-errors > ul > li:first-child{
+        list-style-image: url(../Images/error-1.png);
+    }
+
+    .validation-summary-errors > ul > li:nth-child(2) {
+        list-style-image: url(../Images/error-2.png);
+    }
+
+    .validation-summary-errors > ul > li:nth-child(3) {
+        list-style-image: url(../Images/error-3.png);
+    }
+
+    .validation-summary-errors > ul > li:nth-child(4) {
+        list-style-image: url(../Images/error-4.png);
+    }
+
+    .validation-summary-errors > ul > li:nth-child(5) {
+        list-style-image: url(../Images/error-5.png);
+    }

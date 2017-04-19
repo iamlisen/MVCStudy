@@ -91,7 +91,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Models\GuestResponse.cs" />
     <Compile Include="Models\Product.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -164,9 +163,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Views\Home\RsvpForm.cshtml" />
     <Content Include="Content\Style.css" />
-    <Content Include="Views\Home\Thanks.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\jquery-3.1.1.slim.min.map" />

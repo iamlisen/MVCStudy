@@ -12,7 +12,6 @@ namespace Web
 		public string Name { get; set; }
 		[Display(Name="邮箱")]
 		[Required(ErrorMessage = "请输入邮箱")]
-		[RegularExpression("[A-Za-z0-9._％+-]+＠[A-Za-z0-9.-]+/.[A-Za-z]{2，4}",ErrorMessage = "邮箱格式不正确")]
 		[DataType(DataType.EmailAddress)]
 		public string Email { get; set; }
 		[Required(ErrorMessage = "请输入电话")]

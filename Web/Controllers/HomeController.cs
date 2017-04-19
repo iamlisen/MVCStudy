@@ -32,5 +32,10 @@ namespace Web.Controllers
 				return View();
 			}
 		}
+
+		[HttpPost]
+		public ViewResult Thanks(GuestResponse response){
+			return View(response);
+		}
 	}
 }

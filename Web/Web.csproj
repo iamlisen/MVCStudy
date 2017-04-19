@@ -92,6 +92,7 @@
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Models\GuestResponse.cs" />
+    <Compile Include="Models\Product.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />

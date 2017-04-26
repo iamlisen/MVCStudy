@@ -1,0 +1,18 @@
+﻿@model Web.Product
+
+@{
+    ViewBag.Title = "NameAndPrice";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>NameAndPrice</h2>
+<h3>
+name is @Model.Name 's price is @Model.Price
+</h3>
+
+<div class="container">
+<div class="row">
+<div class="col-xs-6">数量</div>
+		<div class="col-xs-6">@ViewBag.ProductCount</div>
+	</div>
+</div>
